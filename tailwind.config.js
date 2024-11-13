@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
       },
+      screens: {
+        'mobile': '412px', // Custom small screen
+      }
     },
   },
   plugins: [],

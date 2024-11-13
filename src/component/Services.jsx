@@ -104,7 +104,7 @@ const Services = () => {
 
 
                 <div className="product-area">
-                    <div className="item grid grid-cols-4 gap-x-[64px] gap-y-[40px]">
+                    <div className="item grid mobile:grid-cols-2 lg:grid-cols-4 lg:gap-x-[64px] lg:gap-y-[40px] mobile:gap-[4px]">
                         {
                             product.map((item,index)=>(
                                 <div key={index} className="main flex justify-center items-center rounded-md bg-white">

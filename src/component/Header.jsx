@@ -4,61 +4,86 @@ import { Link } from 'react-router-dom'
 import Title from '../ui/Title'
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
+import { HiMiniBars3 } from "react-icons/hi2";
 
 const Header = () => {
   return (
-    <div className="bg-[url('https://i.ibb.co/Hg941nR/Hero-Image.png')] bg-cover bg-no-repeat w-full">
+    <div className="bg-[url('https://i.ibb.co/Hg941nR/Hero-Image.png')] bg-cover bg-no-repeat w-full mobile:w-full">
         <div className="main  ">
             <div className="header bg-[#930B3166]">
                 <Container className="mx-auto">
-                    <div className="h-[88px] flex justify-between items-center ">
-                        <div className="logo">
-                            <img className="w-[120px] h-[64px] " src="https://i.ibb.co.com/c15FLyT/Logo.png" alt="" />
-                        </div>
-                        <div className="menu flex items-center gap-[24px]">
-                            <Link className="item flex items-center gap-[6px]">
-                                <div className="item font-inter">
-                                    <img className="w-[20px] h-[20px]" src="https://i.ibb.co.com/5MqL95H/Vector.png" alt="" />
+                    <div className="md:hidden  ">
+                         <div className="item h-[56px] flex items-center justify-between ">
+                            <div className="bars">
+                                <HiMiniBars3 className=" text-[#ffffff] text-[24px]" />
+                            </div>
+                            <div className="logo">
+                                <div className="logo">
+                                    <img className=" w-[64px] h-[34px]" src="https://i.ibb.co.com/c15FLyT/Logo.png" alt="" />
                                 </div>
-                                <div className="text">
-                                 <p className="text-white font-inter font-medium text-[18px]">Home</p>
+                            </div>
+                            <div className="login">
+                              <button className="bg-[#FAD502] w-[72px] h-[32px] rounded-md text-[14px] font-medium text-[#930b31] group-hover:text-black">
+                                 Login
+                              </button>
+                            </div>
+                         </div>
+                    </div>
+                    {/* desktop area here */}
+                    <div className="hidden md:block">
+                        <div className="  h-[88px] flex justify-between items-center ">
+                            <div className="logo">
+                                <img className="w-[120px] h-[64px] " src="https://i.ibb.co.com/c15FLyT/Logo.png" alt="" />
+                            </div>
+                            <div className="menu flex items-center gap-[24px]">
+                                <Link className="item flex items-center gap-[6px]">
+                                    <div className="item font-inter">
+                                        <img className="w-[20px] h-[20px]" src="https://i.ibb.co.com/5MqL95H/Vector.png" alt="" />
+                                    </div>
+                                    <div className="text">
+                                    <p className="text-white font-inter font-medium text-[18px]">Home</p>
+                                    </div>
+                                </Link>
+                                <Link className="item flex items-center gap-[6px]">
+                                    <div className="item font-inter">
+                                        <img className="w-[20px] h-[20px]" src="https://i.ibb.co.com/fMY75p3/Vector-1.png" alt="" />
+                                    </div>
+                                    <div className="text">
+                                    <p className="text-white font-inter font-medium text-[18px]">Manage Boking</p>
+                                    </div>
+                                </Link>
+                                <Link className="item flex items-center gap-[6px]">
+                                    <div className="item font-inter">
+                                        <img className="w-[20px] h-[20px]" src="https://i.ibb.co.com/bQP9rFx/Nav-icons.png" alt="" />
+                                    </div>
+                                    <div className="text"> 
+                                    <p className="text-white font-inter font-medium text-[18px]">Agent Point</p>
+                                    </div>
+                                </Link>
+                                <div className=" bg-[#FAD502] rounded-md hover:bg-[#930b31] hover:border-[#FAD502] group  border-[1px]  duration-300">
+                                    <button className="px-6 py-2 text-[18px] font-medium text-[#930b31] group-hover:text-black">
+                                        Login
+                                    </button>
                                 </div>
-                            </Link>
-                            <Link className="item flex items-center gap-[6px]">
-                                <div className="item font-inter">
-                                    <img className="w-[20px] h-[20px]" src="https://i.ibb.co.com/fMY75p3/Vector-1.png" alt="" />
-                                </div>
-                                <div className="text">
-                                  <p className="text-white font-inter font-medium text-[18px]">Manage Boking</p>
-                                </div>
-                            </Link>
-                            <Link className="item flex items-center gap-[6px]">
-                                <div className="item font-inter">
-                                    <img className="w-[20px] h-[20px]" src="https://i.ibb.co.com/bQP9rFx/Nav-icons.png" alt="" />
-                                </div>
-                                <div className="text"> 
-                                <p className="text-white font-inter font-medium text-[18px]">Agent Point</p>
-                                </div>
-                            </Link>
-                            <div className=" bg-[#FAD502] rounded-md hover:bg-[#930b31] hover:border-[#FAD502] group  border-[1px]  duration-300">
-                                <button className="px-6 py-2 text-[18px] font-medium text-[#930b31] group-hover:text-black">
-                                    Login
-                                </button>
                             </div>
                         </div>
-                    </div>
+                    </div>    
                 </Container>
             </div>
             <Container className="mx-auto">
-                <div className="here-item  mt-[106px]">
-                    <div className="title max-w-[480px] leading-[48px] flex flex-col gap-[18px]">
-                        <Title className="text-[40px] font-bold" title="Experience the City Tour  -Your Ticket to Freedom & Adventure" />
-                        <p className="text-[18px] text-white leading-[28px] font-inter">
-                           Enjoy unlimited stops and start exploring the city's top sights at your own pace
-                        </p>
+                <div className="here-item  lg:mt-[106px] mobile:mt-[56px]">
+                    <div className="">
+                        <div className="lg:max-w-[480px] mobile:max-w-[323px] mobile:text-[22px] mobile:leading-[22px] mobile:text-center mobile:mx-auto lg:text-[40px] lg:leading-[48px] lg:text-start font-bold lg:mx-0">
+                           <Title className=" tracking-[2%]" title="Experience the City Tour  -Your Ticket to Freedom & Adventure" />
+                        </div>
+                       <div className=" mobile:mt-[8px] lg:mt-[16px]  pb-[64px]"> 
+                          <p className=" font-inter mobile:max-w-[263px] mobile:text-[12px] mobile:text-center mobile:mx-auto lg:mx-0 lg:text-start  lg:text-[18px] lg:leading-[28px] text-[#dddddd] lg:max-w-[479px]">
+                              Enjoy unlimited stops and start exploring the city's top sights at your own pace
+                           </p>
+                       </div>
                     </div>
                 </div>
-                <div className="here-item  mt-[96px] pb-[48px] ">
+                <div className="here-item  mt-[96px] pb-[48px] hidden md:block ">
                     <div className="item max-w-[1160px] bg-white mx-auto  rounded-xl ">
                         <div className="item px-[38px] pt-[24px] pb-[36px] flex items-center gap-[64px]">
                             <div className="service w-[30%]">
