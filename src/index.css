@@ -1,0 +1,27 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url(./ui/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiI2B.woff2) format('woff2');
+    }
+  }
+
+
+  .customBottomBorder::after{
+    content: '';
+    position: absolute;
+    background:#930B31;
+    bottom:-8px;
+    left: 0;
+    height: 2px;
+    width:100%;
+
+
+  }
+  
