@@ -10,7 +10,7 @@ export default {
         inter: ['Inter', 'sans-serif'],
       },
       screens: {
-        'mobile': '412px', // Custom small screen
+        'mobile': '200px', // Custom small screen
       }
     },
   },
