@@ -49,7 +49,7 @@ const Foter = () => {
                       </div>
                   </div>
                 </div>
-                <div className="sear w-[30%]">
+                <div className="sear w-[30%] hidden">
                   <div className="item">
                       <div className="title">
                          <Title className="font-medium text-[22px] font-inter" title="Stay Updated"/>

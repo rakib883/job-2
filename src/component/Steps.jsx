@@ -41,23 +41,23 @@ const Steps = () => {
     ]
   return (
     <div>
-        <div className="main bg-[url('https://i.ibb.co/kgJGr4j/HD-2.png')] bg-no-repeat bg-cover w-full  ">
-            <Container className="py-[68px] mx-auto">
+        <div className="main lg:bg-[url('https://i.ibb.co/kgJGr4j/HD-2.png')] mobile:bg-[url('https://i.ibb.co.com/wSSWGCh/Frame-87-2.png')]  bg-no-repeat bg-cover w-full  ">
+            <Container className="lg:py-[68px] mobile:py-[32px] mx-auto">
                      <div className="item  flex justify-end">
                         <div className="  ">
-                            <div className="item flex flex-col gap-[24px]">
+                            <div className="item flex flex-col lg:gap-[24px] mobile:gap-[20px]">
                                 {
                                     steps.map((item,index)=>
-                                     <div key={index} className="item flex gap-[25px]">
-                                          <div className="icon mt-8 bg-white flex justify-center items-center h-[40px] w-[40px] rounded-full">
-                                               <p className="text-[32px] text-[#930B31]">{item?.icon}</p>
+                                     <div key={index} className="item flex lg:gap-[25px]  mobile:gap-[10px]">
+                                          <div className="icon mt-8 bg-white flex justify-center items-center lg:h-[40px] lg:w-[40px] mobile:h-[24px] mobile:w-[24px] rounded-full">
+                                               <p className="mobile:text-[16px] lg:text-[32px] text-[#930B31]">{item?.icon}</p>
                                             </div> 
                                           <div className="text-white">
                                             <div className="number">
                                                 <p className=' font-bold text-[14px] text-[#FAD502]'>{item?.number}</p>
                                             </div>
                                             <div className="title">
-                                                <Title className="font-semibold text-[32px]" title={item?.title} />
+                                                <Title className="font-semibold lg:text-[32px] mobile:text-[18px]" title={item?.title} />
                                             </div>
                                             <div className=" max-w-[380px]">
                                                 {item?.desc}

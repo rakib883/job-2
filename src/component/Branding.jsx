@@ -14,11 +14,11 @@ const Branding = () => {
     <div>
         <div className="item bg-[#FAD502]">
             <Container className="mx-auto">
-                <div className="item flex justify-between">
+                <div className="item lg:h-[112px] mobile:h-[52px] flex items-center justify-between mobile:gap-[33px]">
                     {
                         linkItem.map((item,index)=>(
-                            <div key={index} className="item pt-[38px] pb-[34px] ">
-                                <img className="w-[80px] h-[40px] " src={item?.name} alt="" />
+                            <div key={index} className="item ">
+                                <img className=" lg:h-[40px] mobile:h-[20px] " src={item?.name} alt="" />
                             </div>
                         ))
                     }
