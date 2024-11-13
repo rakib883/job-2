@@ -10,52 +10,54 @@ const Foter = () => {
     <div className="bg-[#131213]">
       <Container className="mx-auto pt-[80px]">
         <div className="foter ">
-            <div className="item flex">
-                <div className="logo w-[30%] ">
-                    <div className="icon mt-[40px]">
+            <div className="item grid lg:grid-cols-3 mobile:grid-cols-1">
+                <div className="logo  ">
+                    <div className="icon">
                         <img className="w-[300px] h-[160px]" src="https://i.ibb.co.com/0cspmhR/Logo-da82820aa0438044dcf7-png.png" alt="" />
                     </div>
-                    <div className="pr mt-[16px] w-[368px]">
-                        <p className="font-inter text-[14px] text-[#dddddd] text-start">
+                    <div className="pr mt-[16px] mobile:w-[368px]">
+                        <p className="font-inter text-[14px] text-[#dddddd] text-start ]">
                            At SightSeeing Roma, we believe that every traveller deserves to explore the majestic beauty and rich history of Rome with ease and comfort. Established with a passion for delivering unforgettable experiences, we are your gateway to the heart of this ancient city
                         </p>
                     </div>
                 </div>
-                <div className="bus w-[20%]">
-                  <div className="item">
-                      <div className="title">
-                         <Title className="font-medium text-[22px] font-inter" title="Bus Services "/>
-                      </div>
-                      <div className="desc text-[#dddddd] mt-[24px] flex flex-col gap-[8px]">
-                        <p className="font-inter text-[14px] font-medium">Big Bus </p>
-                        <p className="font-inter text-[14px] font-medium">Green Line</p>
-                        <p className="font-inter text-[14px] font-medium">I Love Rome</p>
-                        <p className="font-inter text-[14px] font-medium">IO Bus</p>
-                        <p className="font-inter text-[14px] font-medium">Sightseeing </p>
-                      </div>
+                <div className=" flex gap-20 mobile:mt-[40px]">
+                  <div className="bus ">
+                     <div className="item">
+                        <div className="title">
+                           <Title className="font-medium text-[22px] font-inter" title="Bus Services "/>
+                        </div>
+                        <div className="desc text-[#dddddd] mt-[24px] flex flex-col gap-[8px]">
+                           <p className="font-inter text-[14px] font-medium">Big Bus </p>
+                           <p className="font-inter text-[14px] font-medium">Green Line</p>
+                           <p className="font-inter text-[14px] font-medium">I Love Rome</p>
+                           <p className="font-inter text-[14px] font-medium">IO Bus</p>
+                           <p className="font-inter text-[14px] font-medium">Sightseeing </p>
+                        </div>
+                     </div>
                   </div>
-                </div>
-                <div className="abo w-[20%] ">
-                  <div className="item">
-                      <div className="title">
-                         <Title className="font-medium text-[22px] font-inter" title="About us"/>
-                      </div>
-                      <div className="desc text-[#dddddd] mt-[24px] flex flex-col gap-[8px]">
-                        <p className="font-inter text-[14px] font-medium">About us </p>
-                        <p className="font-inter text-[14px] font-medium">Terams & condetion</p>
-                        <p className="font-inter text-[14px] font-medium">Return polecy</p>
-                        <p className="font-inter text-[14px] font-medium">Refund polecy</p>
-                        <p className="font-inter text-[14px] font-medium">Pryvacy policy</p>
-                      </div>
+                  <div className="abo">
+                     <div className="item">
+                        <div className="title">
+                           <Title className="font-medium text-[22px] font-inter" title="About us"/>
+                        </div>
+                        <div className="desc text-[#dddddd] mt-[24px] flex flex-col gap-[8px]">
+                           <p className="font-inter text-[14px] font-medium">About us </p>
+                           <p className="font-inter text-[14px] font-medium">Terams & condetion</p>
+                           <p className="font-inter text-[14px] font-medium">Return polecy</p>
+                           <p className="font-inter text-[14px] font-medium">Refund polecy</p>
+                           <p className="font-inter text-[14px] font-medium">Pryvacy policy</p>
+                        </div>
+                     </div>
                   </div>
-                </div>
-                <div className="sear w-[30%] hidden">
-                  <div className="item">
+                </div>  
+                <div className="sear ">
+                  <div className="item mobile:mt-[40px]">
                       <div className="title">
                          <Title className="font-medium text-[22px] font-inter" title="Stay Updated"/>
                       </div>
                       <div className="desc text-[#dddddd] mt-[16px] flex flex-col gap-[8px]">
-                        <p className="font-inter text-[14px] font-medium">
+                        <p className="font-inter text-[14px] font-medium lg:max-w-[331px]">
                            Sign up to receive exclusive offers, travel tips, and the latest bus routes directly to your inbox
                         </p>
                       </div>
@@ -65,7 +67,7 @@ const Foter = () => {
                            <button className="bg-[#fad502] h-[40px] w-[88px] rounded-r-md font-medium font-inter text-[14px]">Submit</button>
                         </div>
                       </div>
-                      <div className="pament-item mt-[94px]">
+                      <div className="pament-item lg:mt-[94px] mobile:mt-[56px]">
                          <p className="font-inter text-[14px] font-medium text-[#dddddd] ">Pamwent method</p>
                       </div>
                       <div className="pament-icin w-[331px] h-[33px] mt-[24px]">
@@ -77,7 +79,7 @@ const Foter = () => {
              <div className="subfoter mt-[24px]">
                 <div className="item border-[.5px] border-[#79747e]"></div>
               </div>
-              <div className="item mt-[16px] flex justify-between items-center pb-[88px]">
+              <div className="item mt-[16px] flex lg:flex-row mobile:flex-col lg:justify-between mobile:justify-start mobile:gap-[16px] lg:items-center pb-[88px]">
                  <div className="text font-inter text-[14px] font-medium text-[#dddddd]">
                     © All Rights Reserved to Sightseeing Roma
                  </div>

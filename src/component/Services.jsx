@@ -79,28 +79,50 @@ const Services = () => {
                   </div>
                 </div>
                 <div className="product-tab my-[48px] ">
-                    <div className="item flex gap-[24px] hidden">
-                        <div onClick={()=>tabSetIsActive(1)} className={`${tabIsActive === 1 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
-                            <p className="font-inter font-medium text-[22px]" >Big Bus Packages</p>
-                        </div>
-                        <div className="item">
-                            <div  onClick={()=>tabSetIsActive(2)} className={`${tabIsActive === 2 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
-                                <p className="font-inter font-medium text-[22px]" >Green Line Packages</p>
+                     <div className="item hidden lg:block">
+                        <div className="item flex gap-[24px]">
+                            <div onClick={()=>tabSetIsActive(1)} className={`${tabIsActive === 1 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
+                                <p className="font-inter font-medium text-[22px]" >Big Bus Packages</p>
+                            </div>
+                            <div className="item">
+                                <div  onClick={()=>tabSetIsActive(2)} className={`${tabIsActive === 2 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
+                                    <p className="font-inter font-medium text-[22px]" >Green Line Packages</p>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div  onClick={()=>tabSetIsActive(3)} className={`${tabIsActive === 3 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
+                                    <p className="font-inter font-medium text-[22px]" >I Love Rome Packages</p>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div  onClick={()=>tabSetIsActive(4)} className={`${tabIsActive === 4 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
+                                    <p className="font-inter font-medium text-[22px]" >IO Bus Packages</p>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div  onClick={()=>tabSetIsActive(5)} className={`${tabIsActive === 5 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
+                                    <p className="font-inter font-medium text-[22px]" >Sightseeing Packages</p>
+                                </div>
                             </div>
                         </div>
-                        <div className="item">
-                            <div  onClick={()=>tabSetIsActive(3)} className={`${tabIsActive === 3 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
-                                <p className="font-inter font-medium text-[22px]" >I Love Rome Packages</p>
+                    </div>   
+                    {/* small device items */}
+                    <div className="main lg:hidden">
+                        <div className="item flex flex-wrap gap-4">
+                            <div onClick={()=>tabSetIsActive(1)} className={`${ tabIsActive === 1 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item   rounded-md h-[40px] flex items-center justify-center`}>
+                                <p className="font-inter font-medium text-[16px] px-4">Big Bus Packages</p>
                             </div>
-                        </div>
-                        <div className="item">
-                            <div  onClick={()=>tabSetIsActive(4)} className={`${tabIsActive === 4 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
-                                <p className="font-inter font-medium text-[22px]" >IO Bus Packages</p>
+                            <div onClick={()=>tabSetIsActive(2)}  className={`${ tabIsActive === 2 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item   rounded-md h-[40px] flex items-center justify-center`}>
+                                <p className="font-inter font-medium text-[16px] px-4">Green Line Packages</p>
                             </div>
-                        </div>
-                        <div className="item">
-                            <div  onClick={()=>tabSetIsActive(5)} className={`${tabIsActive === 5 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
-                                <p className="font-inter font-medium text-[22px]" >Sightseeing Packages</p>
+                            <div onClick={()=>tabSetIsActive(3)}  className={`${ tabIsActive === 3 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item   rounded-md h-[40px] flex items-center justify-center`}>
+                                <p className="font-inter font-medium text-[16px] px-4">I Love Rome Packages</p>
+                            </div>
+                            <div onClick={()=>tabSetIsActive(4)}  className={`${ tabIsActive === 4 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item   rounded-md h-[40px] flex items-center justify-center`}>
+                                <p className="font-inter font-medium text-[16px] px-4">IO Bus Packages</p>
+                            </div>
+                            <div onClick={()=>tabSetIsActive(5)}  className={`${ tabIsActive === 5 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item   rounded-md h-[40px] flex items-center justify-center`}>
+                                <p className="font-inter font-medium text-[16px] px-4">Sightseeing Packages</p>
                             </div>
                         </div>
                     </div>
