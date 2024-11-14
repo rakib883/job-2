@@ -46,7 +46,7 @@ const Budget = () => {
                         {
                          smallScren.map((item,index)=>
                           <div key={index} className="first">
-                              <img className=" sm:max-h-[212px] sm:max-w-[380px] " src={item?.image} alt="img" />
+                              <img className=" sm:max-h-[212px]  " src={item?.image} alt="img" />
                           </div>
                         )}
                     </div>
