@@ -8,24 +8,24 @@ import { FaInstagram } from "react-icons/fa";
 const Foter = () => {
   return (
     <div className="bg-[#131213] sm:mt-[40px]">
-      <Container className="mx-auto pt-[80px]">
+      <Container className="mx-auto">
         <div className="foter ">
             <div className="item grid lg:grid-cols-3 mobile:grid-cols-1">
                 <div className="logo  ">
-                    <div className="icon">
-                        <img className="w-[300px] h-[160px]" src="https://i.ibb.co.com/0cspmhR/Logo-da82820aa0438044dcf7-png.png" alt="" />
+                    <div className="icon sm:mt-[40px]">
+                        <img className="sm:w-[300px] sm:h-[160px]" src="https://i.ibb.co.com/0cspmhR/Logo-da82820aa0438044dcf7-png.png" alt="" />
                     </div>
-                    <div className="pr mt-[16px] mobile:w-[368px]">
+                    <div className="sm:max-w-[368px] sm:mt-[16px]">
                         <p className="font-inter text-[14px] text-[#dddddd] text-start ]">
                            At SightSeeing Roma, we believe that every traveller deserves to explore the majestic beauty and rich history of Rome with ease and comfort. Established with a passion for delivering unforgettable experiences, we are your gateway to the heart of this ancient city
                         </p>
                     </div>
                 </div>
-                <div className=" flex gap-20 mobile:mt-[40px]">
+                <div className=" flex gap-20 sm:mt-[40px]">
                   <div className="bus ">
                      <div className="item">
                         <div className="title">
-                           <Title className="font-medium text-[22px] font-inter" title="Bus Services "/>
+                           <Title className="font-medium sm:text-[22px] text-[#ffffff] " title="Bus Services "/>
                         </div>
                         <div className="desc text-[#dddddd] mt-[24px] flex flex-col gap-[8px]">
                            <p className="font-inter text-[14px] font-medium">Big Bus </p>
@@ -39,7 +39,7 @@ const Foter = () => {
                   <div className="abo">
                      <div className="item">
                         <div className="title">
-                           <Title className="font-medium text-[22px] font-inter" title="About us"/>
+                           <Title className="font-medium sm:text-[22px] text-[#ffffff]" title="About us"/>
                         </div>
                         <div className="desc text-[#dddddd] mt-[24px] flex flex-col gap-[8px]">
                            <p className="font-inter text-[14px] font-medium">About us </p>
@@ -52,38 +52,38 @@ const Foter = () => {
                   </div>
                 </div>  
                 <div className="sear ">
-                  <div className="item mobile:mt-[40px]">
+                  <div className="sm:mt-[40px]">
                       <div className="title">
                          <Title className="font-medium text-[22px] font-inter" title="Stay Updated"/>
                       </div>
-                      <div className="desc text-[#dddddd] mt-[16px] flex flex-col gap-[8px]">
+                      <div className="desc text-[#dddddd] sm:mt-[16px] flex flex-col gap-[8px]">
                         <p className="font-inter text-[14px] font-medium lg:max-w-[331px]">
                            Sign up to receive exclusive offers, travel tips, and the latest bus routes directly to your inbox
                         </p>
                       </div>
                       <div className="input-area">
-                        <div className="item flex  items-center mt-[24px]">
+                        <div className="item flex  items-center sm:mt-[24px]">
                            <input className=" outline-none px-4 h-[40px] w-[180px] rounded-l-md" type="text" name="" id="" placeholder="Email" />
                            <button className="bg-[#fad502] h-[40px] w-[88px] rounded-r-md font-medium font-inter text-[14px]">Submit</button>
                         </div>
                       </div>
-                      <div className="pament-item lg:mt-[94px] mobile:mt-[56px]">
+                      <div className="pament-item  sm:mt-[56px]">
                          <p className="font-inter text-[14px] font-medium text-[#dddddd] ">Pamwent method</p>
                       </div>
-                      <div className="pament-icin w-[331px] h-[33px] mt-[24px]">
+                      <div className="pament-icin sm:w-[331px] sm:h-[33px] sm:mt-[24px]">
                          <img className="w-full h-full" src="https://i.ibb.co.com/RQYrBBm/Frame-52.png" alt="" />
                       </div>
                    </div>
                 </div>
             </div>
-             <div className="subfoter mt-[24px]">
+             <div className="subfoter sm:mt-[32px]">
                 <div className="item border-[.5px] border-[#79747e]"></div>
               </div>
-              <div className="item mt-[16px] flex lg:flex-row mobile:flex-col lg:justify-between mobile:justify-start mobile:gap-[16px] lg:items-center pb-[88px]">
+              <div className="item mt-[16px] flex lg:flex-row sm:flex-col lg:justify-between mobile:justify-start mobile:gap-[16px] lg:items-center pb-[88px] sm:pb-[24px]">
                  <div className="text font-inter text-[14px] font-medium text-[#dddddd]">
                     © All Rights Reserved to Sightseeing Roma
                  </div>
-                 <div className="social">
+                 <div className=" sm:mt-[16px]">
                    <div className="item flex items-center gap-[24px]">
                      <div className="item">
                         <IoLogoFacebook className="text-[#ffffff] h-[32px] w-[32px]" />
