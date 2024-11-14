@@ -60,7 +60,7 @@ const MobileSearch = () => {
                                     </div>
                                 </div>
                              </div>    
-                            <div className="butto max-w-[160px] mx-auto   flex items-center bg-[#930B31] justify-center h-full mt-[24px] rounded-md">
+                            <div className="butto max-w-[160px] mx-auto   flex items-center bg-[#930B31] justify-center h-[48px] mt-[24px] rounded-md">
                                 <button className="flex gap-[8px] items-center py-4 text-white">
                                     <div className="icon">
                                       <IoIosSearch className="h-[24px] w-[24px]" />

@@ -12,13 +12,13 @@ const Branding = () => {
     ]
   return (
     <div>
-        <div className="item bg-[#FAD502]">
-            <Container className="mx-auto">
-                <div className="item lg:h-[112px] mobile:h-[52px] flex items-center justify-between mobile:gap-[33px]">
+        <div className=" mt-[16px] bg-[#FAD502]">
+            <Container className="">
+                <div className="flex justify-between items-center sm:h-[52px]">
                     {
                         linkItem.map((item,index)=>(
                             <div key={index} className="item ">
-                                <img className=" lg:h-[40px] mobile:h-[20px] " src={item?.name} alt="" />
+                                <img className=" h-[20px] " src={item?.name} alt="" />
                             </div>
                         ))
                     }
