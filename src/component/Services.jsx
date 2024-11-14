@@ -68,7 +68,7 @@ const Services = () => {
     const [tabIsActive,tabSetIsActive] = useState(1)
   return (
     <div>
-        <div className="item">
+        <div className="item bg-[#f2f2f7]">
             <Container className="">
                 <div className=" ">
                    <div className="">
@@ -140,28 +140,28 @@ const Services = () => {
                                         </div>
                                         <div className="des mx-[8px]">
                                             <div className="subfoter mt-[16px] flex items-center justify-between">
-                                                <p className="font-inter font-medium text-[12px]">{item?.subtitle}</p>
+                                                <p className="font-inter font-medium sm:text-[12px]">{item?.subtitle}</p>
                                                 <p className="flex gap-1 items-center">
-                                                   <IoMdTime className="lg:text-[18px] mobile:text-[10px]" />  <p className="font-inter font-medium lg:text-[12px] mobile:text-[10px]">{item?.time}</p>
+                                                   <IoMdTime className="lg:text-[18px] mobile:text-[10px] sm:hidden" />  <p className="font-inter font-medium sm:text-[10px]">{item?.time}</p>
                                                 </p>
                                             </div>
                                             <div className="title flex items-center mt-[4px] gap-1 ">
                                                 <div className="title-name  ">
-                                                   <p className="font-medium lg:text-[16px] mobile:text-[14px] ">Rome Bus Ticket: Discover Package  </p>
+                                                   <p className="font-medium lg:text-[16px] sm:text-[14px] ">Rome Bus Ticket: Discover Package  </p>
                                                 </div>
                                             </div>
                                             <div className="count">
-                                               <div className="img flex text-[#000000] items-center mt-[10px]">
+                                               <div className="img flex text-[#000000] items-center sm:mt-[10px] sm:gap-[1px]">
                                                  <p><BsTicket /></p>
-                                                 <p>#4 </p>
+                                                 <p className="text-[#4b4b4b]">#4 </p>
                                                </div>
                                             </div>
                                             <div className="item flex items-center">
-                                                <p className="lg:text-[14px] mobile:text-[12px] font-inter">Start from</p>
-                                                <p className="font-medium lg:text-[16px] mobile:text-[14px] text-black">$120</p>
-                                                <p className="text-[#5e5e5e]">(per user)</p>
+                                                <p className="sm:text-[12px] mobile:text-[12px] font-inter">Start from</p>
+                                                <p className="font-medium sm:text-[14px] mobile:text-[14px] text-black">$120</p>
+                                                <p className="text-[#5e5e5e] sm:text-[14px]">(per user)</p>
                                             </div>
-                                            <div className="flex justify-between items-center">
+                                            <div className="flex justify-between items-center sm:mt-[10px] sm:pb-[8px]">
                                                 <div className=" bg-[#930B31] text-center rounded-md ">
                                                     <button className=" text-center sm:py-[10px] sm:px-[16px] text-white sm:font-medium">Buy Now</button>
                                                 </div>
