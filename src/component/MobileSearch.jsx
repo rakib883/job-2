@@ -7,11 +7,11 @@ const MobileSearch = () => {
   return (
     <div>
        <div className=""> 
-              <Container className="mx-auto md:hidden">
-                    <div className="item mx-auto   ">
-                        <div className="  px-[38px] pt-[24px] pb-[36px]  items-center gap-[64px] ">
-                            <div className="service w-full  ">
-                                <p className="text-black font-inter font-medium text-[14px]">Select Bus Service</p>
+              <Container className="">
+                    <div className=" bg-[#f2f2f7] sm:mt-[24px] sm:rounded-md  ">
+                        <div className=" sm:p-[16px] ">
+                            <div className="">
+                                <p className="text-black font-inter sm:font-medium sm:text-[14px]">Select Bus Service</p>
                                 <div className="ticket  relative">
                                     <select name="" id="" className="w-full focus-within:border-[#930B31] cursor-pointer outline-none mt-[10px] appearance-none border-[2px] duration-300 border-black rounded-md h-[48px] px-4 font-inter font-medium text-[14px]">
                                         <option value="">Select Bus</option>
@@ -24,8 +24,8 @@ const MobileSearch = () => {
                                     </div>
                                 </div>
                             </div>
-                             <div className="main w-full ">
-                                <p className="text-black font-inter font-medium text-[14px] mt-[14px]">Ticket Price Range</p>
+                             <div className="main w-full sm:mt-[24px] ">
+                                <p className="text-black font-inter font-medium sm:text-[14px] ">Ticket Price Range</p>
                                 <div className="ticket    flex justify-between gap-4 items-center">
                                     <div className="min w-full flex items-center gap-[18px]">
                                         <p className="mt-2 font-inter text-[14px] font-medium">Min</p>

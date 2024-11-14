@@ -11,9 +11,9 @@ const Header = () => {
   return (
     <div className="bg-[url('https://i.ibb.co/Hg941nR/Hero-Image.png')] bg-cover bg-no-repeat w-full mobile:w-full">
         <div className="main  ">
-            <div className="header bg-red-700 sm:max-w-[412px]">
-                <Container className="mx-auto">
-                    <div className="md:hidden  ">
+            <div className="header bg-[#930B3166] sm:max-w-[412px]">
+                <Container className="">
+                    <div className="md:hidden">
                          <div className="item h-[56px] flex items-center justify-between ">
                             <div className="bars">
                                 <HiMiniBars3 className=" text-[#ffffff] text-[24px]" />
@@ -71,18 +71,15 @@ const Header = () => {
                     </div>    
                 </Container>
             </div>
-            <Container className="mx-auto">
-                <div className="here-item  lg:mt-[106px] mobile:mt-[56px]"> 
+            <Container className="sm:pt-[56px]">
+                <div className=""> 
                     <motion.div
-                     initial={{ x: "-100%" }}
-                     animate={{ x: 0 }}
-                     transition={{ duration: 1.5, ease: "easeInOut" }}
                     className="">
-                        <div className="lg:max-w-[480px] mobile:max-w-[323px] mobile:text-[22px] mobile:leading-[22px] mobile:text-center mobile:mx-auto lg:text-[40px] lg:leading-[48px] lg:text-start font-bold lg:mx-0">
-                           <Title className=" tracking-[2%]" title="Experience the City Tour  -Your Ticket to Freedom & Adventure" />
+                        <div className="sm:text-[22px] font-bold font-inter sm:text-center sm:leading-[28px]">
+                           <Title className="" title="Experience the City Tour  -Your Ticket to Freedom & Adventure" />
                         </div>
-                       <div className=" mobile:mt-[8px] lg:mt-[16px]  pb-[64px]"> 
-                          <p className=" font-inter mobile:max-w-[263px] mobile:text-[12px] mobile:text-center mobile:mx-auto lg:mx-0 lg:text-start  lg:text-[18px] lg:leading-[28px] text-[#dddddd] lg:max-w-[479px]">
+                       <div className=" mt-[8px] pb-[64px] sm:max-w-[263px] sm:mx-auto sm:text-center"> 
+                          <p className=" text-[#dddddd] sm:text-[12px] sm:font-medium sm:leading-[20px] ">
                               Enjoy unlimited stops and start exploring the city's top sights at your own pace
                            </p>
                        </div>

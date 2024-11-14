@@ -9,7 +9,7 @@ import Steps from "./component/Steps"
 
 function App() {
   return (
-      <div className="main bg-[#F2F2F7]">
+      <div className="main  sm:bg-white font-inter">
          <Header/>
          <div className="main">
             <MobileSearch/>
