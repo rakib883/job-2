@@ -5,12 +5,13 @@ import Title from '../ui/Title'
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
 import { HiMiniBars3 } from "react-icons/hi2";
+import { motion } from "motion/react"
 
 const Header = () => {
   return (
     <div className="bg-[url('https://i.ibb.co/Hg941nR/Hero-Image.png')] bg-cover bg-no-repeat w-full mobile:w-full">
         <div className="main  ">
-            <div className="header bg-[#930B3166]">
+            <div className="header bg-red-700 sm:max-w-[412px]">
                 <Container className="mx-auto">
                     <div className="md:hidden  ">
                          <div className="item h-[56px] flex items-center justify-between ">
@@ -71,8 +72,12 @@ const Header = () => {
                 </Container>
             </div>
             <Container className="mx-auto">
-                <div className="here-item  lg:mt-[106px] mobile:mt-[56px]">
-                    <div className="">
+                <div className="here-item  lg:mt-[106px] mobile:mt-[56px]"> 
+                    <motion.div
+                     initial={{ x: "-100%" }}
+                     animate={{ x: 0 }}
+                     transition={{ duration: 1.5, ease: "easeInOut" }}
+                    className="">
                         <div className="lg:max-w-[480px] mobile:max-w-[323px] mobile:text-[22px] mobile:leading-[22px] mobile:text-center mobile:mx-auto lg:text-[40px] lg:leading-[48px] lg:text-start font-bold lg:mx-0">
                            <Title className=" tracking-[2%]" title="Experience the City Tour  -Your Ticket to Freedom & Adventure" />
                         </div>
@@ -81,7 +86,7 @@ const Header = () => {
                               Enjoy unlimited stops and start exploring the city's top sights at your own pace
                            </p>
                        </div>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="here-item  mt-[96px] pb-[48px] hidden md:block ">
                     <div className="item max-w-[1160px] bg-white mx-auto  rounded-xl ">

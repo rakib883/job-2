@@ -8,7 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 const Foter = () => {
   return (
     <div className="bg-[#131213]">
-      <Container className="mx-auto pt-[80px]">
+      <Container className="mx-auto pt-[80px] hidden">
         <div className="foter ">
             <div className="item grid lg:grid-cols-3 mobile:grid-cols-1">
                 <div className="logo  ">

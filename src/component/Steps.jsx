@@ -5,6 +5,7 @@ import { MdOutlineQrCode2 } from "react-icons/md";
 import { FaUsers } from "react-icons/fa";
 import { GrStatusGood } from "react-icons/gr";
 import Title from '../ui/Title';
+import { motion } from "framer-motion";
 
 const Steps = () => {
     const steps = [
@@ -45,7 +46,20 @@ const Steps = () => {
             <Container className="lg:py-[68px] mobile:py-[32px] mx-auto">
                      <div className="item  flex justify-end">
                         <div className="  ">
-                            <div className="item flex flex-col lg:gap-[24px] mobile:gap-[20px]">
+                            <motion.div 
+                            
+                            initial={{ x: "100%" }}
+                            animate={{ x: 0 }}
+                            transition={{
+                               type: "spring",
+                               stiffness: 120, // Controls the "springiness"
+                               damping: 15,    // Reduces bounciness
+                               bounce: 0.5,    // Higher values add more bounce
+                               duration: 1.5
+                             }}
+                             viewport={{ once: true, amount: 0.5 }}
+                            
+                            className="item flex flex-col lg:gap-[24px] mobile:gap-[20px]">
                                 {
                                     steps.map((item,index)=>
                                      <div key={index} className="item flex lg:gap-[25px]  mobile:gap-[10px]">
@@ -66,8 +80,8 @@ const Steps = () => {
                                      </div>
                                     )
                                 }
-                            </div>
-                        </div>
+                            </motion.div>
+                        </div> 
                     </div>
             </Container>
         </div>

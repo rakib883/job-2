@@ -8,7 +8,7 @@ import { CiLocationOn } from "react-icons/ci";
 const Budget = () => {
   return (
     <div>
-        <div className="item py-[40px]">
+        <div className="item py-[40px] xs:bg-red-700 sm:bg-pink-600 ">
            <Container className="mx-auto">
               <div className="item flex">
                  <div className="text-area lg:w-[50%] mobile:w-full  mt-[40px]">

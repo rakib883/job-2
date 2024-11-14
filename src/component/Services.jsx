@@ -74,7 +74,7 @@ const Services = () => {
                    <div className="item lg:mt-[120px] mobile:mt-[40px] ">
                       <Title className="lg:text-[40px] mobile:text-[22px]  font-bold text-black" title="Choose Your Bus Service" />
                    </div>
-                  <div className="lg:mt-[16px] mobile:mt-[8px] mobile:max-w-[284px]">
+                  <div className="lg:mt-[16px] mobile:mt-[8px] lg:max-w-full mobile:max-w-[284px]">
                     <p className="font-inter mobile:text-[12px] lg:text-[14px] font-medium  ">Reserve your seat from available bus rides. From comfort to budget, explore ticket options</p>
                   </div>
                 </div>
@@ -109,19 +109,19 @@ const Services = () => {
                     {/* small device items */}
                     <div className="main lg:hidden">
                         <div className="item flex flex-wrap gap-4">
-                            <div onClick={()=>tabSetIsActive(1)} className={`${ tabIsActive === 1 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item   rounded-md h-[40px] flex items-center justify-center`}>
+                            <div onClick={()=>tabSetIsActive(1)} className={`${ tabIsActive === 1 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item cursor-pointer   rounded-md h-[40px] flex items-center justify-center`}>
                                 <p className="font-inter font-medium text-[16px] px-4">Big Bus Packages</p>
                             </div>
-                            <div onClick={()=>tabSetIsActive(2)}  className={`${ tabIsActive === 2 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item   rounded-md h-[40px] flex items-center justify-center`}>
+                            <div onClick={()=>tabSetIsActive(2)}  className={`${ tabIsActive === 2 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item  cursor-pointer  rounded-md h-[40px] flex items-center justify-center`}>
                                 <p className="font-inter font-medium text-[16px] px-4">Green Line Packages</p>
                             </div>
-                            <div onClick={()=>tabSetIsActive(3)}  className={`${ tabIsActive === 3 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item   rounded-md h-[40px] flex items-center justify-center`}>
+                            <div onClick={()=>tabSetIsActive(3)}  className={`${ tabIsActive === 3 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item cursor-pointer   rounded-md h-[40px] flex items-center justify-center`}>
                                 <p className="font-inter font-medium text-[16px] px-4">I Love Rome Packages</p>
                             </div>
-                            <div onClick={()=>tabSetIsActive(4)}  className={`${ tabIsActive === 4 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item   rounded-md h-[40px] flex items-center justify-center`}>
+                            <div onClick={()=>tabSetIsActive(4)}  className={`${ tabIsActive === 4 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item  cursor-pointer  rounded-md h-[40px] flex items-center justify-center`}>
                                 <p className="font-inter font-medium text-[16px] px-4">IO Bus Packages</p>
                             </div>
-                            <div onClick={()=>tabSetIsActive(5)}  className={`${ tabIsActive === 5 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item   rounded-md h-[40px] flex items-center justify-center`}>
+                            <div onClick={()=>tabSetIsActive(5)}  className={`${ tabIsActive === 5 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item cursor-pointer   rounded-md h-[40px] flex items-center justify-center`}>
                                 <p className="font-inter font-medium text-[16px] px-4">Sightseeing Packages</p>
                             </div>
                         </div>
@@ -135,8 +135,8 @@ const Services = () => {
                             product.map((item,index)=>(
                                 <div key={index} className="main flex justify-center items-center rounded-md bg-white">
                                     <div className="item ">
-                                        <div className="image w-full">
-                                            <img className="w-full" src={item?.image} alt="" />
+                                        <div className="image w-full overflow-hidden">
+                                            <img  className="w-full hover:scale-125 duration-300 rounded-md" src={item?.image} alt="" />
                                         </div>
                                         <div className="des mx-[8px]">
                                             <div className="subfoter mt-[16px] flex items-center justify-between">
@@ -162,7 +162,7 @@ const Services = () => {
                                                 <p className="text-[#5e5e5e]">(per user)</p>
                                             </div>
                                             <div className="button flex items-center lg:justify-start mobile:justify-between gap-[8px] lg:mt-8 mobile:mt-[8px] pb-[10px]">
-                                                <div className="bg-[#930B31] rounded-md text-[#930B31]">
+                                                <div className="bg-[#930B31] hover:bg-black/70 duration-300 duration-300 rounded-md text-[#930B31]">
                                                     <button className="font-medium lg:text-[14px] mobile:text-[12px] text-white px-4 py-2">Buy Now</button>
                                                 </div>
                                                 <div className=" rounded-md text-[#930B31]">
