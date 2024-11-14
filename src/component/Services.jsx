@@ -68,7 +68,7 @@ const Services = () => {
     const [tabIsActive,tabSetIsActive] = useState(1)
   return (
     <div>
-        <div className="item bg-[#f2f2f7]">
+        <div className="item bg-[#f2f2f7] pb-2">
             <Container className="">
                 <div className=" ">
                    <div className="">
