@@ -69,16 +69,16 @@ const Services = () => {
   return (
     <div>
         <div className="item">
-            <Container className="mx-auto">
-                <div className="main ">
-                   <div className="item lg:mt-[120px] mobile:mt-[40px] ">
-                      <Title className="lg:text-[40px] mobile:text-[22px]  font-bold text-black" title="Choose Your Bus Service" />
+            <Container className="">
+                <div className=" ">
+                   <div className="">
+                      <Title className="text-black font-bold sm:text-[22px] mt-[40px] sm:leading-[28px]" title="Choose Your Bus Service" />
                    </div>
-                  <div className="lg:mt-[16px] mobile:mt-[8px] lg:max-w-full mobile:max-w-[284px]">
-                    <p className="font-inter mobile:text-[12px] lg:text-[14px] font-medium  ">Reserve your seat from available bus rides. From comfort to budget, explore ticket options</p>
+                  <div className=" sm:mt-[8px] sm:max-w-[284px]">
+                    <p className="sm:text-[12px] leading-[20px] text-[#4b4b4b]">Reserve your seat from available bus rides. From comfort to budget, explore ticket options</p>
                   </div>
                 </div>
-                <div className="product-tab my-[48px] ">
+                <div className="product-tab ">
                      <div className="item hidden lg:block">
                         <div className="item flex gap-[24px]">
                             <div onClick={()=>tabSetIsActive(1)} className={`${tabIsActive === 1 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
@@ -107,10 +107,10 @@ const Services = () => {
                         </div>
                     </div>   
                     {/* small device items */}
-                    <div className="main lg:hidden">
+                    <div className="main lg:hidden sm:mt-[24px]">
                         <div className="item flex flex-wrap gap-4">
                             <div onClick={()=>tabSetIsActive(1)} className={`${ tabIsActive === 1 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item cursor-pointer   rounded-md h-[40px] flex items-center justify-center`}>
-                                <p className="font-inter font-medium text-[16px] px-4">Big Bus Packages</p>
+                                <p className="font-inter font-medium sm:text-[16px] px-4">Big Bus Packages</p>
                             </div>
                             <div onClick={()=>tabSetIsActive(2)}  className={`${ tabIsActive === 2 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item  cursor-pointer  rounded-md h-[40px] flex items-center justify-center`}>
                                 <p className="font-inter font-medium text-[16px] px-4">Green Line Packages</p>
@@ -129,8 +129,8 @@ const Services = () => {
                 </div>
 
 
-                <div className="product-area">
-                    <div className="item grid mobile:grid-cols-2 lg:grid-cols-4 lg:gap-x-[64px] lg:gap-y-[40px] mobile:gap-[4px]">
+                <div className="product-area sm:mt-[40px]">
+                    <div className="item grid sm:grid-cols-2 sm:gap-x-[4px] sm:gap-y-[24px]">
                         {
                             product.map((item,index)=>(
                                 <div key={index} className="main flex justify-center items-center rounded-md bg-white">
@@ -161,12 +161,12 @@ const Services = () => {
                                                 <p className="font-medium lg:text-[16px] mobile:text-[14px] text-black">$120</p>
                                                 <p className="text-[#5e5e5e]">(per user)</p>
                                             </div>
-                                            <div className="button flex items-center lg:justify-start mobile:justify-between gap-[8px] lg:mt-8 mobile:mt-[8px] pb-[10px]">
-                                                <div className="bg-[#930B31] hover:bg-black/70 duration-300 duration-300 rounded-md text-[#930B31]">
-                                                    <button className="font-medium lg:text-[14px] mobile:text-[12px] text-white px-4 py-2">Buy Now</button>
+                                            <div className="flex justify-between items-center">
+                                                <div className=" bg-[#930B31] text-center rounded-md ">
+                                                    <button className=" text-center sm:py-[10px] sm:px-[16px] text-white sm:font-medium">Buy Now</button>
                                                 </div>
                                                 <div className=" rounded-md text-[#930B31]">
-                                                    <button className=" mobile:text-[12px] font-inter font-medium ">View detils</button>
+                                                    <button className=" sm:text-[12px] font-inter font-medium ">View detils</button>
                                                 </div>
                                             </div>
                                         </div>
