@@ -71,7 +71,7 @@ const Services = () => {
         <div className="item bg-[#f2f2f7] pb-2">
             <Container className="">
                 <div className=" ">
-                   <div className="">
+                   <div className=" md:pt-4">
                       <Title className="text-black font-bold sm:text-[22px] mt-[40px] sm:leading-[28px]" title="Choose Your Bus Service" />
                    </div>
                   <div className=" sm:mt-[8px] sm:max-w-[284px]">
@@ -80,28 +80,28 @@ const Services = () => {
                 </div>
                 <div className="product-tab ">
                      <div className="item hidden lg:block">
-                        <div className="item flex gap-[24px]">
+                        <div className="item flex gap-[24px] md:mt-[20px]">
                             <div onClick={()=>tabSetIsActive(1)} className={`${tabIsActive === 1 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
-                                <p className="font-inter font-medium text-[22px]" >Big Bus Packages</p>
+                                <p className="font-inter font-medium md:text-[12px] laptop:text-[22px]" >Big Bus Packages</p>
                             </div>
                             <div className="item">
                                 <div  onClick={()=>tabSetIsActive(2)} className={`${tabIsActive === 2 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
-                                    <p className="font-inter font-medium text-[22px]" >Green Line Packages</p>
+                                    <p className="font-inter font-medium md:text-[12px] laptop:text-[22px]" >Green Line Packages</p>
                                 </div>
                             </div>
                             <div className="item">
                                 <div  onClick={()=>tabSetIsActive(3)} className={`${tabIsActive === 3 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
-                                    <p className="font-inter font-medium text-[22px]" >I Love Rome Packages</p>
+                                    <p className="font-inter font-medium md:text-[12px] laptop:text-[22px]" >I Love Rome Packages</p>
                                 </div>
                             </div>
                             <div className="item">
                                 <div  onClick={()=>tabSetIsActive(4)} className={`${tabIsActive === 4 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
-                                    <p className="font-inter font-medium text-[22px]" >IO Bus Packages</p>
+                                    <p className="font-inter font-medium md:text-[12px] laptop:text-[22px]" >IO Bus Packages</p>
                                 </div>
                             </div>
                             <div className="item">
                                 <div  onClick={()=>tabSetIsActive(5)} className={`${tabIsActive === 5 ? "customBottomBorder text-[#930B31]" :"" } item  relative cursor-pointer`}>
-                                    <p className="font-inter font-medium text-[22px]" >Sightseeing Packages</p>
+                                    <p className="font-inter font-medium md:text-[12px] laptop:text-[22px]" >Sightseeing Packages</p>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +130,7 @@ const Services = () => {
 
 
                 <div className="product-area sm:mt-[40px]">
-                    <div className="item grid sm:grid-cols-2 sm:gap-x-[4px] sm:gap-y-[24px]">
+                    <div className="item grid sm:grid-cols-2 md:grid-cols-3 laptop:grid-cols-4 sm:gap-x-[4px] sm:gap-y-[24px]">
                         {
                             product.map((item,index)=>(
                                 <div key={index} className="main flex justify-center items-center rounded-md bg-white">

@@ -41,8 +41,8 @@ const Budget = () => {
                         </div>
                     </div>
                  </div>
-                 <div className="galle   mobile:hidden lg:block">
-                    <div className="item ">
+                 <div className="galle ">
+                    <div className="item grid md:grid-cols-3 ">
                         {
                          smallScren.map((item,index)=>
                           <div key={index} className="first">

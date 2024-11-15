@@ -44,13 +44,13 @@ const Steps = () => {
     <div>
         <div className="main lg:bg-[url('https://i.ibb.co/kgJGr4j/HD-2.png')] sm:bg-[url('https://i.ibb.co.com/wSSWGCh/Frame-87-2.png')]  bg-no-repeat bg-cover w-full  ">
             <Container className="sm:py-[32px]">
-                     <div className="item  flex justify-end">
+                     <div className="item  flex sm:justify-end ">
                         <div className="sm:max-w-[323px] ">
                             <motion.div className="item flex flex-col sm:gap-[24px]">
                                 {
                                     steps.map((item,index)=>
                                      <div key={index} className="sm:flex sm:gap-[16px] ">
-                                           <div className="bg-white  sm:mt-[30px] sm:w-[24px] sm:h-[24px] rounded-full flex justify-center items-center">
+                                           <div className="bg-white  sm:mt-[30px] sm:w-[24px] sm:h-[24px] rounded-full flex justify-center items-center md:w-[40px] md:h-[40px]">
                                                <p className="mobile:text-[16px] lg:text-[32px] text-[#930B31]">{item?.icon}</p>
                                             </div> 
                                           <div className="text-white ">

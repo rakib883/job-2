@@ -11,7 +11,7 @@ function App() {
   return (
       <div className="main  sm:bg-white font-inter">
          <Header/>
-         <div className="main">
+         <div className="main ">
             <MobileSearch/>
          </div>
          <Branding/>

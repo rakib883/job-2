@@ -10,7 +10,7 @@ const Foter = () => {
     <div className="bg-[#131213] sm:mt-[40px]">
       <Container className="mx-auto">
         <div className="foter ">
-            <div className="item grid lg:grid-cols-3 mobile:grid-cols-1">
+            <div className="item grid  sm:grid-cols-1 md:grid-cols-2 laptop:grid-cols-3 md:gap-2">
                 <div className="logo  ">
                     <div className="icon sm:mt-[40px]">
                         <img className="sm:w-[300px] sm:h-[160px]" src="https://i.ibb.co.com/0cspmhR/Logo-da82820aa0438044dcf7-png.png" alt="" />
@@ -79,7 +79,7 @@ const Foter = () => {
              <div className="subfoter sm:mt-[32px]">
                 <div className="item border-[.5px] border-[#79747e]"></div>
               </div>
-              <div className="item mt-[16px] flex lg:flex-row sm:flex-col lg:justify-between mobile:justify-start mobile:gap-[16px] lg:items-center pb-[88px] sm:pb-[24px]">
+              <div className="item mt-[16px] flex md:flex-row md:items-center sm:flex-col md:justify-between  mobile:gap-[16px] lg:items-center pb-[88px] sm:pb-[24px]">
                  <div className="text font-inter text-[14px] font-medium text-[#dddddd]">
                     © All Rights Reserved to Sightseeing Roma
                  </div>

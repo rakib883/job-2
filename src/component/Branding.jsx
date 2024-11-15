@@ -12,9 +12,9 @@ const Branding = () => {
     ]
   return (
     <div>
-        <div className=" mt-[16px] bg-[#FAD502]">
+        <div className=" mt-4 bg-[#FAD502]">
             <Container className="">
-                <div className="flex justify-between items-center sm:h-[52px]">
+                <div className="flex justify-between items-center h-[52px] ">
                     {
                         linkItem.map((item,index)=>(
                             <div key={index} className="item ">

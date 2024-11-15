@@ -7,11 +7,11 @@ const MobileSearch = () => {
   return (
     <div>
        <div className=""> 
-              <Container className="">
-                    <div className=" bg-[#f2f2f7] sm:mt-[24px] sm:rounded-md  ">
-                        <div className=" sm:p-[16px] ">
+              <Container className="laptop:hidden">
+                    <div className=" bg-[#f2f2f7] mt-[24px] rounded-lg ">
+                        <div className="p-[16px] ">
                             <div className="">
-                                <p className="text-black font-inter sm:font-medium sm:text-[14px]">Select Bus Service</p>
+                                <p className="text-black font-inter font-medium text-[14px]">Select Bus Service</p>
                                 <div className="ticket  relative">
                                     <select name="" id="" className="w-full focus-within:border-[#930B31] cursor-pointer outline-none mt-[10px] appearance-none border-[2px] duration-300 border-black rounded-md h-[48px] px-4 font-inter font-medium text-[14px]">
                                         <option value="">Select Bus</option>
@@ -24,8 +24,8 @@ const MobileSearch = () => {
                                     </div>
                                 </div>
                             </div>
-                             <div className="main w-full sm:mt-[24px] ">
-                                <p className="text-black font-inter font-medium sm:text-[14px] ">Ticket Price Range</p>
+                             <div className=" w-full mt-[24px] ">
+                                <p className="text-black font-inter font-medium text-[14px] ">Ticket Price Range</p>
                                 <div className="ticket    flex justify-between gap-4 items-center">
                                     <div className="min w-full flex items-center gap-[18px]">
                                         <p className="mt-2 font-inter text-[14px] font-medium">Min</p>
@@ -36,12 +36,12 @@ const MobileSearch = () => {
                                                 <option className="" value="big_bus">$250</option>
                                                 <option className="" value="mikrow">$100</option>
                                             </select>
-                                            <div className="react-icon absolute  top-[28px] right-4">
+                                            <div className="react-icon absolute  top-[23px] right-4">
                                                 <MdKeyboardArrowDown className="text-xl" />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="others bg-black w-[20px] h-[2px] mt-[24px]  "></div>
+                                    <div className="others bg-black w-[20px] h-[2px] mt-[8px]  "></div>
                                     <div className="ticket w-full relative  ">
                                      <div className="min w-full flex items-center gap-[18px]">
                                         <p className="mt-2 font-inter text-[14px] font-medium">Max</p>
@@ -52,7 +52,7 @@ const MobileSearch = () => {
                                                 <option className="" value="big_bus">$250</option>
                                                 <option className="" value="mikrow">$100</option>
                                             </select>
-                                            <div className="react-icon absolute  top-[28px] right-4">
+                                            <div className="react-icon absolute   top-[23px] right-4">
                                                 <MdKeyboardArrowDown className="text-xl" />
                                             </div>
                                         </div>

@@ -9,10 +9,12 @@ import { motion } from "motion/react"
 
 const Header = () => {
   return (
-    <div className="bg-[url('https://i.ibb.co/Hg941nR/Hero-Image.png')] bg-cover bg-no-repeat w-full mobile:w-full">
-        <div className="main  ">
-            <div className="header bg-[#930B3166] sm:max-w-[412px]">
+    <div className="bg-[url('https://i.ibb.co/Hg941nR/Hero-Image.png')]  w-full bg-cover bg-center">
+        <div className=" ">
+            <div className="header  bg-[#930B3166] ">
                 <Container className="">
+
+                    {/* small device header area start */}
                     <div className="md:hidden">
                          <div className="item h-[56px] flex items-center justify-between ">
                             <div className="bars">
@@ -30,7 +32,9 @@ const Header = () => {
                             </div>
                          </div>
                     </div>
-                    {/* desktop area here */}
+                    {/* small device header area end */}
+
+                    {/* desktop header area here */}
                     <div className="hidden md:block">
                         <div className="  h-[88px] flex justify-between items-center ">
                             <div className="logo">
@@ -68,24 +72,25 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>    
+                    </div> 
+                    {/* desktop header area end    */}
                 </Container>
             </div>
-            <Container className="sm:pt-[56px]">
+            <Container className="">
                 <div className=""> 
                     <motion.div
                     className="">
-                        <div className="sm:text-[22px] font-bold font-inter sm:text-center sm:leading-[28px]">
+                        <div className=" max-w-[323] mx-auto mt-[56px] text-[22px] font-bold text-center leading-[28px] ">
                            <Title className="" title="Experience the City Tour  -Your Ticket to Freedom & Adventure" />
                         </div>
-                       <div className=" mt-[8px] pb-[64px] sm:max-w-[263px] sm:mx-auto sm:text-center"> 
-                          <p className=" text-[#dddddd] sm:text-[12px] sm:font-medium sm:leading-[20px] ">
+                       <div className=" mt-[8px] pb-[64px] max-w-[263px] mx-auto text-center  text-[12px] font-medium f"> 
+                          <p className=" text-[#dddddd]  sm:leading-[20px] ">
                               Enjoy unlimited stops and start exploring the city's top sights at your own pace
                            </p>
                        </div>
                     </motion.div>
                 </div>
-                <div className="here-item  mt-[96px] pb-[48px] hidden md:block ">
+                <div className="here-item  laptop:mt-[96px] pb-[48px]  hidden laptop:block ">
                     <div className="item max-w-[1160px] bg-white mx-auto  rounded-xl ">
                         <div className="item px-[38px] pt-[24px] pb-[36px] flex items-center gap-[64px]">
                             <div className="service w-[30%]">
@@ -97,7 +102,7 @@ const Header = () => {
                                         <option value="big_bus">Big Bus</option>
                                         <option value="mikrow">Mikrow</option>
                                     </select>
-                                    <div className="react-icon absolute top-[30px] right-4">
+                                    <div className="react-icon absolute sm:top-[30px] right-4 ">
                                        <MdKeyboardArrowDown className="text-xl" />
                                     </div>
                                 </div>
@@ -114,7 +119,7 @@ const Header = () => {
                                                 <option className="" value="big_bus">$250</option>
                                                 <option className="" value="mikrow">$100</option>
                                             </select>
-                                            <div className="react-icon absolute  top-[28px] right-4">
+                                            <div className="react-icon absolute  sm:top-[28px] right-4">
                                                 <MdKeyboardArrowDown className="text-xl" />
                                             </div>
                                         </div>
