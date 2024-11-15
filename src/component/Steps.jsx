@@ -42,25 +42,25 @@ const Steps = () => {
     ]
   return (
     <div>
-        <div className="main lg:bg-[url('https://i.ibb.co/kgJGr4j/HD-2.png')] sm:bg-[url('https://i.ibb.co.com/wSSWGCh/Frame-87-2.png')]  bg-no-repeat bg-cover w-full  ">
-            <Container className="sm:py-[32px]">
+        <div className=" lg:bg-[url('https://i.ibb.co/kgJGr4j/HD-2.png')] bg-[url('https://i.ibb.co.com/wSSWGCh/Frame-87-2.png')]  bg-no-repeat bg-cover w-full  ">
+            <Container className="py-[32px]">
                      <div className="item  flex sm:justify-end ">
-                        <div className="sm:max-w-[323px] ">
-                            <motion.div className="item flex flex-col sm:gap-[24px]">
+                        <div className="max-w-[323px] ">
+                            <motion.div className="item flex flex-col gap-[24px]">
                                 {
                                     steps.map((item,index)=>
-                                     <div key={index} className="sm:flex sm:gap-[16px] ">
-                                           <div className="bg-white  sm:mt-[30px] sm:w-[24px] sm:h-[24px] rounded-full flex justify-center items-center md:w-[40px] md:h-[40px]">
-                                               <p className="mobile:text-[16px] lg:text-[32px] text-[#930B31]">{item?.icon}</p>
+                                     <div key={index} className="flex gap-[16px] ">
+                                           <div className="bg-white  mt-[30px] w-[24px] h-[24px] rounded-full flex justify-center items-center ">
+                                               <p className="  text-[#930B31]">{item?.icon}</p>
                                             </div> 
                                           <div className="text-white ">
                                             <div className="number">
-                                                <p className=' font-bold sm:text-[14px] text-[#FAD502]'>{item?.number}</p>
+                                                <p className=' font-bold text-[14px] text-[#FAD502]'>{item?.number}</p>
                                             </div>
                                             <div className=" sm:mt-[8px]">
-                                                <Title className=" font-bold sm:text-[18px]" title={item?.title} />
+                                                <Title className=" font-bold text-[18px]" title={item?.title} />
                                             </div>
-                                            <div className=" sm:max-w-[248px] sm:text-[12px] leading-[20px]">
+                                            <div className=" max-w-[248px] text-[12px] leading-[20px]">
                                                 {item?.desc}
                                             </div>
                                           </div>

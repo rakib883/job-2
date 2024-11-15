@@ -69,13 +69,13 @@ const Services = () => {
   return (
     <div>
         <div className="item bg-[#f2f2f7] pb-2">
-            <Container className="">
+            <Container className=" pt-[40px]">
                 <div className=" ">
-                   <div className=" md:pt-4">
-                      <Title className="text-black font-bold sm:text-[22px] mt-[40px] sm:leading-[28px]" title="Choose Your Bus Service" />
+                   <div className=" text-[22px] font-bold leading-[28px] ">
+                      <Title className="text-black font-bold sm:text-[22px]  sm:leading-[28px]" title="Choose Your Bus Service" />
                    </div>
-                  <div className=" sm:mt-[8px] sm:max-w-[284px]">
-                    <p className="sm:text-[12px] leading-[20px] text-[#4b4b4b]">Reserve your seat from available bus rides. From comfort to budget, explore ticket options</p>
+                  <div className="mt-[8px] max-w-[284px]">
+                    <p className="text-[12px] leading-[20px] text-[#4b4b4b]">Reserve your seat from available bus rides. From comfort to budget, explore ticket options</p>
                   </div>
                 </div>
                 <div className="product-tab ">
@@ -107,10 +107,10 @@ const Services = () => {
                         </div>
                     </div>   
                     {/* small device items */}
-                    <div className="main lg:hidden sm:mt-[24px]">
+                    <div className="main lg:hidden mt-[24px]">
                         <div className="item flex flex-wrap gap-4">
                             <div onClick={()=>tabSetIsActive(1)} className={`${ tabIsActive === 1 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item cursor-pointer   rounded-md h-[40px] flex items-center justify-center`}>
-                                <p className="font-inter font-medium sm:text-[16px] px-4">Big Bus Packages</p>
+                                <p className="font-inter font-medium text-[16px] px-4">Big Bus Packages</p>
                             </div>
                             <div onClick={()=>tabSetIsActive(2)}  className={`${ tabIsActive === 2 ? "border-[#920b31] border-[2px]" : "border-[#cac4d0] border-[2px]"} item  cursor-pointer  rounded-md h-[40px] flex items-center justify-center`}>
                                 <p className="font-inter font-medium text-[16px] px-4">Green Line Packages</p>
@@ -129,8 +129,8 @@ const Services = () => {
                 </div>
 
 
-                <div className="product-area sm:mt-[40px]">
-                    <div className="item grid sm:grid-cols-2 md:grid-cols-3 laptop:grid-cols-4 sm:gap-x-[4px] sm:gap-y-[24px]">
+                <div className="product-area mt-[40px]">
+                    <div className="item grid grid-cols-2 gap-y-[24px] gap-x-[4px]  ">
                         {
                             product.map((item,index)=>(
                                 <div key={index} className="main flex justify-center items-center rounded-md bg-white">
@@ -140,33 +140,33 @@ const Services = () => {
                                         </div>
                                         <div className="des mx-[8px]">
                                             <div className="subfoter mt-[16px] flex items-center justify-between">
-                                                <p className="font-inter font-medium sm:text-[12px]">{item?.subtitle}</p>
+                                                <p className="font-inter font-medium text-[12px]">{item?.subtitle}</p>
                                                 <p className="flex gap-1 items-center">
-                                                   <IoMdTime className="lg:text-[18px] mobile:text-[10px] sm:hidden" />  <p className="font-inter font-medium sm:text-[10px]">{item?.time}</p>
+                                                   <IoMdTime className="lg:text-[18px] mobile:text-[10px] hidden" />  <p className="font-inter font-medium text-[10px]">{item?.time}</p>
                                                 </p>
                                             </div>
                                             <div className="title flex items-center mt-[4px] gap-1 ">
                                                 <div className="title-name  ">
-                                                   <p className="font-medium lg:text-[16px] sm:text-[14px] ">Rome Bus Ticket: Discover Package  </p>
+                                                   <p className="font-medium lg:text-[16px] text-[14px] ">Rome Bus Ticket: Discover Package  </p>
                                                 </div>
                                             </div>
                                             <div className="count">
-                                               <div className="img flex text-[#000000] items-center sm:mt-[10px] sm:gap-[1px]">
+                                               <div className="img flex text-[#000000] items-center mt-[10px] gap-[1px]">
                                                  <p><BsTicket /></p>
                                                  <p className="text-[#4b4b4b]">#4 </p>
                                                </div>
                                             </div>
                                             <div className="item flex items-center">
-                                                <p className="sm:text-[12px] mobile:text-[12px] font-inter">Start from</p>
-                                                <p className="font-medium sm:text-[14px] mobile:text-[14px] text-black">$120</p>
-                                                <p className="text-[#5e5e5e] sm:text-[14px]">(per user)</p>
+                                                <p className="text-[12px] mobile:text-[12px] font-inter">Start from</p>
+                                                <p className="font-medium text-[14px] mobile:text-[14px] text-black">$120</p>
+                                                <p className="text-[#5e5e5e] text-[14px]">(per user)</p>
                                             </div>
-                                            <div className="flex justify-between items-center sm:mt-[10px] sm:pb-[8px]">
+                                            <div className="flex justify-between items-center mt-[10px] pb-[8px]">
                                                 <div className=" bg-[#930B31] text-center rounded-md ">
-                                                    <button className=" text-center sm:py-[10px] sm:px-[16px] text-white sm:font-medium">Buy Now</button>
+                                                    <button className=" text-center py-[10px] px-[16px] text-white font-medium">Buy Now</button>
                                                 </div>
                                                 <div className=" rounded-md text-[#930B31]">
-                                                    <button className=" sm:text-[12px] font-inter font-medium ">View detils</button>
+                                                    <button className=" text-[12px] font-inter font-medium ">View detils</button>
                                                 </div>
                                             </div>
                                         </div>
