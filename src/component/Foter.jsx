@@ -10,7 +10,7 @@ const Foter = () => {
     <div className="bg-[#131213] mt-[40px]">
       <Container className="">
         <div className="foter ">
-            <div className="item grid  grid-cols-1   ">
+            <div className="item grid  grid-cols-1 sm:grid-cols-2   ">
                 <div className=" ">
                     <div className="icon mt-[40px]">
                         <img className="w-[300px] h-[160px]" src="https://i.ibb.co.com/0cspmhR/Logo-da82820aa0438044dcf7-png.png" alt="" />

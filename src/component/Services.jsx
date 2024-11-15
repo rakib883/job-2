@@ -130,7 +130,7 @@ const Services = () => {
 
 
                 <div className="product-area mt-[40px]">
-                    <div className="item grid grid-cols-2 gap-y-[24px] gap-x-[4px]  ">
+                    <div className="item grid grid-cols-2 sm:grid-cols-3 gap-y-[24px] gap-x-[4px]  ">
                         {
                             product.map((item,index)=>(
                                 <div key={index} className="main flex justify-center items-center rounded-md bg-white">

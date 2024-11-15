@@ -7,7 +7,7 @@ const MobileSearch = () => {
   return (
     <div>
        <div className=""> 
-              <Container className="laptop:hidden">
+              <Container className="md:hidden">
                     <div className=" bg-[#f2f2f7] mt-[24px] rounded-lg ">
                         <div className="p-[16px] ">
                             <div className="">

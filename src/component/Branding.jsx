@@ -12,13 +12,13 @@ const Branding = () => {
     ]
   return (
     <div>
-        <div className=" mt-4 bg-[#FAD502]">
+        <div className=" mt-4 md:mt-0 bg-[#FAD502]">
             <Container className="">
-                <div className="flex justify-between items-center h-[52px] ">
+                <div className="flex justify-between items-center h-[52px] md:h-[112px] ">
                     {
                         linkItem.map((item,index)=>(
                             <div key={index} className="item ">
-                                <img className=" h-[20px] " src={item?.name} alt="" />
+                                <img className=" h-[20px] md:h-[40px] " src={item?.name} alt="" />
                             </div>
                         ))
                     }

@@ -90,7 +90,9 @@ const Header = () => {
                        </div>
                     </motion.div>
                 </div>
-                <div className="here-item  laptop:mt-[96px] pb-[48px]  hidden laptop:block ">
+
+                {/* ticket search area start */}
+                <div className="here-item  laptop:mt-[96px] pb-[48px]  hidden md:block ">
                     <div className="item max-w-[1160px] bg-white mx-auto  rounded-xl ">
                         <div className="item px-[38px] pt-[24px] pb-[36px] flex items-center gap-[64px]">
                             <div className="service w-[30%]">
@@ -154,6 +156,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
+                {/* ticket search area end */}
             </Container>
         </div>
     </div>
