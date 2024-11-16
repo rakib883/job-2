@@ -14,8 +14,8 @@ const Budget = () => {
   return (
     <div>
         <div className=" ">
-           <Container className="">
-              <div className=" flex flex-col-reverse mt-[40px] gap-[40px]">
+           <Container className="lg:mx-auto">
+              <div className=" flex flex-col-reverse mt-[40px] gap-[40px] lg:flex-row">
                  <div className=" ">
                     <div className="">
                         <p className="font-inter font-medium text-[14px] text-[#5e5e5e]">Get In Touch</p>

@@ -16,6 +16,10 @@ export default {
         lg: "1024px", // Large devices (e.g., desktops)
         xl: "1280px", // Extra large devices
         "2xl": "1536px", // 2X large devices
+
+
+        // custom ticket search area edit
+        
       }
     },
   },

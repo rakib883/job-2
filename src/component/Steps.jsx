@@ -50,15 +50,15 @@ const Steps = () => {
                                 {
                                     steps.map((item,index)=>
                                      <div key={index} className="flex gap-[16px] ">
-                                           <div className="bg-white  mt-[30px] w-[24px] h-[24px] rounded-full flex justify-center items-center ">
-                                               <p className="  text-[#930B31]">{item?.icon}</p>
+                                           <div className="bg-white  mt-[30px] w-[24px] h-[24px] lg:w-[40px] lg:h-[40px] rounded-full flex justify-center items-center ">
+                                               <p className="  text-[#930B31] lg:text-[32px]">{item?.icon}</p>
                                             </div> 
                                           <div className="text-white ">
                                             <div className="number">
                                                 <p className=' font-bold text-[14px] text-[#FAD502]'>{item?.number}</p>
                                             </div>
                                             <div className=" sm:mt-[8px]">
-                                                <Title className=" font-bold text-[18px]" title={item?.title} />
+                                                <Title className=" font-bold text-[18px] lg:text-[28px]" title={item?.title} />
                                             </div>
                                             <div className=" max-w-[248px] text-[12px] leading-[20px]">
                                                 {item?.desc}

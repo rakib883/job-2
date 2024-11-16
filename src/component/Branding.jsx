@@ -13,7 +13,7 @@ const Branding = () => {
   return (
     <div>
         <div className=" mt-4 md:mt-0 bg-[#FAD502]">
-            <Container className="">
+            <Container className="lg:mx-auto">
                 <div className="flex justify-between items-center h-[52px] md:h-[112px] ">
                     {
                         linkItem.map((item,index)=>(

@@ -12,7 +12,7 @@ const Header = () => {
     <div className="bg-[url('https://i.ibb.co/Hg941nR/Hero-Image.png')]  w-full bg-cover bg-center">
         <div className=" ">
             <div className="header  bg-[#930B3166] ">
-                <Container className="">
+                <Container className=" lg:mx-auto">
 
                     {/* small device header area start */}
                     <div className="md:hidden">
@@ -76,15 +76,15 @@ const Header = () => {
                     {/* desktop header area end    */}
                 </Container>
             </div>
-            <Container className="">
+            <Container className="lg:mx-auto">
                 <div className=""> 
                     <motion.div
                     className="">
-                        <div className=" max-w-[323] mx-auto mt-[56px] text-[22px] font-bold text-center leading-[28px] ">
+                        <div className=" max-w-[323] mx-auto mt-[56px] text-[22px] font-bold text-center leading-[28px] lg:max-w-[479px] lg:mx-0 lg:text-start lg:text-[40px] lg:leading-[48px] lg:font-bold lg:mt-[116px]  ">
                            <Title className="" title="Experience the City Tour  -Your Ticket to Freedom & Adventure" />
                         </div>
-                       <div className=" mt-[8px] pb-[64px] max-w-[263px] mx-auto text-center  text-[12px] font-medium f"> 
-                          <p className=" text-[#dddddd]  sm:leading-[20px] ">
+                       <div className=" mt-[8px] pb-[64px] max-w-[263px]  mx-auto text-center  text-[12px] font-medium lg:max-w-[479px] lg:text-start lg:mx-0 lg:text-[18px] lg:mt-[16px] lg:pb-[96px] "> 
+                          <p className=" text-[#dddddd]  sm:leading-[20px] lg:leading-[28px] ">
                               Enjoy unlimited stops and start exploring the city's top sights at your own pace
                            </p>
                        </div>
@@ -92,7 +92,7 @@ const Header = () => {
                 </div>
 
                 {/* ticket search area start */}
-                <div className="here-item  laptop:mt-[96px] pb-[48px]  hidden md:block ">
+                <div className="here-item lg:pb-[48px]  hidden md:block ">
                     <div className="item max-w-[1160px] bg-white mx-auto  rounded-xl ">
                         <div className="item px-[38px] pt-[24px] pb-[36px] flex items-center gap-[64px]">
                             <div className="service w-[30%]">
